@@ -1,10 +1,10 @@
 import { ChevronLeft, Star } from "lucide-react";
 import React from "react";
-import { Roboto_Condensed } from "next/font/google";
+import { Aldrich } from "next/font/google";
 import { cn } from "@/lib/utlis";
 import { Button } from "@/components/ui/button";
 
-const roboto_Condensed = Roboto_Condensed({ subsets: ["latin-ext"] });
+const aldrich = Aldrich({ weight: ["400"], preload: true, subsets: ["latin"] });
 
 const Header = () => {
   return (
@@ -28,14 +28,14 @@ const Header = () => {
       </div>
       <h1
         className={cn(
-          "ml-10 text-4xl cursor-default uppercase",
-          roboto_Condensed.className
+          "ml-10 text-4xl cursor-default uppercase mt-3",
+          aldrich.className
         )}
       >
         SERVER INFO
       </h1>
       <div
-        className={cn("mt-[4.5rem] max-w-[32vw]", roboto_Condensed.className)}
+        className={cn("mt-[4.5rem] max-w-[32vw]", aldrich.className)}
         style={{}}
       >
         <h1
@@ -55,7 +55,7 @@ const Header = () => {
       </div>
       <div className="mt-8 gap-4 flex">
         <Button
-          className={cn("uppercase font-medium", roboto_Condensed.className)}
+          className={cn("uppercase font-medium", aldrich.className)}
           variant={"ghost"}
           size={"large_custom"}
           style={{ letterSpacing: "3" }}
@@ -63,7 +63,7 @@ const Header = () => {
           join
         </Button>
         <Button
-          className={cn("uppercase font-medium", roboto_Condensed.className)}
+          className={cn("uppercase font-medium", aldrich.className)}
           variant={"ghost"}
           size={"large_custom"}
           style={{ letterSpacing: "3" }}
@@ -71,7 +71,7 @@ const Header = () => {
           spectate
         </Button>
         <Button
-          className={cn("uppercase font-medium", roboto_Condensed.className)}
+          className={cn("uppercase font-medium", aldrich.className)}
           variant={"ghost"}
           size={"large_custom"}
           style={{ letterSpacing: "3" }}
@@ -79,7 +79,7 @@ const Header = () => {
           join as commander
         </Button>
         <Button
-          className={cn("uppercase font-medium", roboto_Condensed.className)}
+          className={cn("uppercase font-medium", aldrich.className)}
           variant={"ghost"}
           size={"large_custom"}
           style={{ letterSpacing: "3" }}
