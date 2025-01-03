@@ -71,7 +71,7 @@ const ServerStatus = () => {
           </div>
         </div>
       )}
-      <div className="mt-4 flex justify-between w-[45vw] gap-8">
+      <div className="mt-4 flex justify-between w-[40vw] gap-8">
         {isSettingsLoading ? (
           <Loader2 className="h-4 w-4 animate-spin" />
         ) : (

@@ -6,8 +6,14 @@ body {
   background: url("/menu__background.png") no-repeat center center fixed;
   background-size: 100% 100%; /* Ensures the image stretches to fill the entire viewport */
   font-family: Arial, Helvetica, sans-serif;
-  position: relative; /* Needed for layering */
-  overflow: hidden;
+  position: relative;
+  overflow-y: auto; /* Allow scrolling for the content */
+  overflow-x: hidden;
+  height: 100%; /* Ensure body height allows scrolling */
+}
+
+.dawnbreaker {
+  background: url("/dawnbreaker.png") no-repeat center center fixed;
 }
 
 /* Blur effect layer */
@@ -31,7 +37,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 12, 19, 0.8); /* Black with 60% opacity */
+  background: rgba(0, 12, 19, 0.7); /* Black with 70% opacity */
   z-index: -1; /* Above the blur layer, behind content */
 }
 
